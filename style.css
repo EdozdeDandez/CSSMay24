@@ -1,0 +1,66 @@
+@keyframes anima {
+  0% {
+    left: 0px;
+    top: 0px; }
+  25% {
+    left: 200px;
+    top: 0px; }
+  50% {
+    left: 200px;
+    top: 200px; }
+  75% {
+    left: 0px;
+    top: 200px; }
+  100% {
+    left: 0px;
+    top: 0px; } }
+.container {
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto; }
+  .container hr {
+    clear: both; }
+  .container .content, .container .content2 {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    float: left;
+    border: solid 1px #009900;
+    margin-top: 2px; }
+  .container .content2 {
+    height: 200px;
+    width: 500px; }
+
+.content1 {
+  margin-right: 20px;
+  float: right;
+  height: 450px;
+  width: 400px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background: linear-gradient(#6666ff, #ccffff); }
+  .content1 a {
+    text-decoration: none;
+    background: #99ff66; }
+  .content1 a:hover {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    background: #66ffff;
+    width: 200px;
+    height: 70px;
+    border: solid 1px; }
+
+#anim {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: white;
+  animation-name: anima;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite; }
+
+/*# sourceMappingURL=style.css.map */

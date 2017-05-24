@@ -1,0 +1,64 @@
+@mixin bd($b){
+	-webkit-border-radius: $b;
+	-moz-border-radius: $b;
+	-ms-border-radius: $b;
+	border-radius: $b;
+}
+@keyframes anima {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+
+$gradient: linear-gradient(#6666ff,#ccffff);
+.container{
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	hr{
+		clear: both;
+	}
+	.content{
+		@include bd(15px);
+		float: left;
+		border: solid 1px #009900;
+		margin-top: 2px;
+	}
+	.content2{
+		@extend .content;
+		height: 200px;
+		width: 500px;
+	}
+}
+.content1{
+	margin-right: 20px;
+	float: right;
+	height: 450px;
+	width: 400px;
+	padding: 5px;
+	margin-bottom: 10px;
+	background: $gradient;
+	a{
+		text-decoration:none;
+		background: #99ff66;
+	}
+	a:hover{
+		@include bd(10px);
+		background: #66ffff;
+		width: 200px;
+		height: 70px;
+		border: solid 1px;
+	}
+}
+#anim{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: white;
+    animation-name: anima;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
